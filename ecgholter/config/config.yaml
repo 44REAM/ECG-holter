@@ -1,0 +1,32 @@
+FS: 500
+
+# -------------- DETECTOR ------
+
+DETECTOR:
+  # above mean detector
+  AM_SMOOTH_MSEC: 500 # msec
+  AM_START_THRESHOLD: 0.0
+  AM_THRESHOLD_INTERCEPT1: 0.0
+  AM_THRESHOLD_INTERCEPT2: 0.0
+
+  # two average detector
+  TA_SHORT_MSEC: 120.0 # msec
+  TA_LONG_MSEC: 600.0 # msec
+  TA_PEAK_WIDTH: 80.0 # msec
+
+  # R peak should spacing 250ms
+  RPEAK_SPACING_MSEC: 250 # msec
+
+  # usable enhancer [modified_swt_enhancer, swt_enhancer,modified_pan_tompkins_enhancer, pan_tompkins_enhancer, none]
+  # default: modified_swt_enhancer
+  ENHANCER: "modified_swt_enhancer"
+
+  # usable detector [above_mean, pan_tompkins]
+  # default: above_mean
+  DETECTOR: "above_mean"
+
+DIAG:
+  TACHY: 150 # bpm
+  BRADY: 50 # bpm
+  PAUSE: 2.0 # second
+  HR_PEAK_BUFFER: 10 # peak
